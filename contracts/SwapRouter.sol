@@ -2,9 +2,9 @@
 pragma solidity =0.7.6;
 pragma abicoder v2;
 
-import '@uniswap/v3-core/contracts/libraries/SafeCast.sol';
-import '@uniswap/v3-core/contracts/libraries/TickMath.sol';
-import '@uniswap/v3-core/contracts/interfaces/IUniswapV3Pool.sol';
+import '@kinetix/v3-core-smart-contracts/contracts/libraries/SafeCast.sol';
+import '@kinetix/v3-core-smart-contracts/contracts/libraries/TickMath.sol';
+import '@kinetix/v3-core-smart-contracts/contracts/interfaces/IUniswapV3Pool.sol';
 
 import './interfaces/ISwapRouter.sol';
 import './base/PeripheryImmutableState.sol';
@@ -17,8 +17,8 @@ import './libraries/PoolAddress.sol';
 import './libraries/CallbackValidation.sol';
 import './interfaces/external/IWETH9.sol';
 
-/// @title Uniswap V3 Swap Router
-/// @notice Router for stateless execution of swaps against Uniswap V3
+/// @title Kinetix V3 Swap Router
+/// @notice Router for stateless execution of swaps against Kinetix V3
 contract SwapRouter is
     ISwapRouter,
     PeripheryImmutableState,

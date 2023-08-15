@@ -41,11 +41,11 @@ describe('V3Migrator', () => {
     await weth9.approve(nft.address, constants.MaxUint256)
 
     // deploy the migrator
-    const migrator = (await (await ethers.getContractFactory('V3Migrator')).deploy(
+    const migrator = ((await (await ethers.getContractFactory('V3Migrator')).deploy(
       factory.address,
       weth9.address,
       nft.address
-    )) as V3Migrator
+    )) as unknown) as V3Migrator
 
     return {
       factoryV2,
@@ -85,7 +85,7 @@ describe('V3Migrator', () => {
 
     const pairAddress = await factoryV2.getPair(token.address, weth9.address)
 
-    pair = new ethers.Contract(pairAddress, PAIR_V2_ABI, wallet) as IUniswapV2Pair
+    pair = (new ethers.Contract(pairAddress, PAIR_V2_ABI, wallet) as unknown) as IUniswapV2Pair
 
     await token.transfer(pair.address, 10000)
     await weth9.transfer(pair.address, 10000)

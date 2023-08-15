@@ -1,30 +1,24 @@
-# Uniswap V3 Periphery
+# Kinetix V3 Periphery
 
-[![Tests](https://github.com/Uniswap/uniswap-v3-periphery/workflows/Tests/badge.svg)](https://github.com/Uniswap/uniswap-v3-periphery/actions?query=workflow%3ATests)
-[![Lint](https://github.com/Uniswap/uniswap-v3-periphery/workflows/Lint/badge.svg)](https://github.com/Uniswap/uniswap-v3-periphery/actions?query=workflow%3ALint)
 
-This repository contains the periphery smart contracts for the Uniswap V3 Protocol.
-For the lower level core contracts, see the [uniswap-v3-core](https://github.com/Uniswap/uniswap-v3-core)
+This repository contains the periphery smart contracts for the Kinetix V3 Protocol.
+For the lower level core contracts, see the [kinetix-v3-core](https://github.com/kinetixfi/v3-core-smart-contracts)
 repository.
 
-## Bug bounty
-
-This repository is subject to the Uniswap V3 bug bounty program,
-per the terms defined [here](./bug-bounty.md).
 
 ## Local deployment
 
 In order to deploy this code to a local testnet, you should install the npm package
-`@uniswap/v3-periphery`
+`@kinetix/v3-periphery`
 and import bytecode imported from artifacts located at
-`@uniswap/v3-periphery/artifacts/contracts/*/*.json`.
+`@kinetix/v3-periphery/artifacts/contracts/*/*.json`.
 For example:
 
 ```typescript
 import {
   abi as SWAP_ROUTER_ABI,
   bytecode as SWAP_ROUTER_BYTECODE,
-} from '@uniswap/v3-periphery/artifacts/contracts/SwapRouter.sol/SwapRouter.json'
+} from '@kinetix/v3-periphery/artifacts/contracts/SwapRouter.sol/SwapRouter.json'
 
 // deploy the bytecode
 ```
@@ -35,11 +29,11 @@ your local deployment.
 
 ## Using solidity interfaces
 
-The Uniswap v3 periphery interfaces are available for import into solidity smart contracts
-via the npm artifact `@uniswap/v3-periphery`, e.g.:
+The Kinetix v3 periphery interfaces are available for import into solidity smart contracts
+via the npm artifact `@kinetix/v3-periphery`, e.g.:
 
 ```solidity
-import '@uniswap/v3-periphery/contracts/interfaces/ISwapRouter.sol';
+import '@kinetix/v3-periphery/contracts/interfaces/ISwapRouter.sol';
 
 contract MyContract {
   ISwapRouter router;

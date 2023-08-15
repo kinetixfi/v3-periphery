@@ -1,6 +1,6 @@
 # Deployment addresses
 
-The latest version of `@uniswap/v3-core`, `@uniswap/v3-periphery`, `@uniswap/swap-router-contracts`, and `@uniswap/v3-staker` are deployed at the addresses listed below. Integrators should **no longer assume that they are deployed to the same addresses across chains** and be extremely careful to confirm mappings below.
+The latest version of `@kinetix/v3-core-smart-contracts`, `@uniswap/v3-periphery`, `@uniswap/swap-router-contracts`, and `@uniswap/v3-staker` are deployed at the addresses listed below. Integrators should **no longer assume that they are deployed to the same addresses across chains** and be extremely careful to confirm mappings below.
 
 | Contract                                                                                                                                                     | Mainnet, Polygon, Optimism, Arbitrum, Testnets Address | Celo Address                                 |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------ | -------------------------------------------- |
@@ -18,7 +18,7 @@ The latest version of `@uniswap/v3-core`, `@uniswap/v3-periphery`, `@uniswap/swa
 
 These addresses are final and were deployed from these npm package versions:
 
-- `@uniswap/v3-core`: [`1.0.0`](https://github.com/Uniswap/uniswap-v3-core/tree/v1.0.0)
+- `@kinetix/v3-core-smart-contracts`: [`1.0.0`](https://github.com/Uniswap/uniswap-v3-core/tree/v1.0.0)
 - `@uniswap/v3-periphery`: [`1.0.0`](https://github.com/Uniswap/uniswap-v3-periphery/tree/v1.0.0)
 
 The source code is verified with Etherscan on all networks, for all contracts except `UniswapV3Pool`.
