@@ -8,8 +8,7 @@
   },
   "scripts": {
     "compile": "hardhat compile",
-    "test": "hardhat test",
-    "publish": "npm publish --no-git-checks"
+    "test": "hardhat test"
   },
   "homepage": "https://kinetix.finance",
   "keywords": [
@@ -35,7 +34,7 @@
     "node": ">=10"
   },
   "dependencies": {
-    "@kinetix/v3-core-smart-contracts": "^1.0.0",
+    "@kinetix/v3-core": "^1.0.0",
     "@openzeppelin/contracts": "3.4.2-solc-0.7",
     "@uniswap/lib": "^4.0.1-alpha",
     "@uniswap/v2-core": "1.0.1",

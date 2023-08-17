@@ -2,10 +2,10 @@
 pragma solidity >=0.7.0;
 pragma abicoder v2;
 
-import '@kinetix/v3-core-smart-contracts/contracts/interfaces/IUniswapV3Pool.sol';
-import '@kinetix/v3-core-smart-contracts/contracts/libraries/TickMath.sol';
-import '@kinetix/v3-core-smart-contracts/contracts/libraries/BitMath.sol';
-import '@kinetix/v3-core-smart-contracts/contracts/libraries/FullMath.sol';
+import '@kinetix/v3-core/contracts/interfaces/IUniswapV3Pool.sol';
+import '@kinetix/v3-core/contracts/libraries/TickMath.sol';
+import '@kinetix/v3-core/contracts/libraries/BitMath.sol';
+import '@kinetix/v3-core/contracts/libraries/FullMath.sol';
 import '@openzeppelin/contracts/utils/Strings.sol';
 import '@openzeppelin/contracts/math/SafeMath.sol';
 import '@openzeppelin/contracts/math/SignedSafeMath.sol';
